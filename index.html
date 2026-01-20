@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <div style="position: absolute; top: 20px; right: 20px;">
+                <button class="logout-btn" onclick="logout()" title="Logout">👤 Logout</button>
+            </div>
+            <h1>🏠 Smart Home Dashboard</h1>
+            <p class="subtitle" id="userInfo">Logged in as: <span id="currentUsername"></span></p>
+            <p class="subtitle" id="systemStatus">🟢 System Online</p>
+            <p class="subtitle" id="lastUpdate">Last updated: just now</p>
+        </header>
+
+        <div class="filter-bar">
+            <button class="filter-btn active" onclick="filterDevices('All')" id="filterAll">All</button>
+            <button class="filter-btn" onclick="filterDevices('Security')" id="filterSecurity">Security</button>
+            <button class="filter-btn" onclick="filterDevices('Climate Control')" id="filterClimate">Climate</button>
+            <button class="filter-btn" onclick="filterDevices('Entertainment')" id="filterEntertainment">Entertainment</button>
+            <button class="filter-btn" onclick="filterDevices('Lighting')" id="filterLighting">Lighting</button>
+            <button class="filter-btn control-btn" onclick="setAll(true)">All ON</button>
+            <button class="filter-btn control-btn" onclick="setAll(false)">All OFF</button>
+            <button class="filter-btn control-btn" onclick="autoMode()">Auto Mode</button>
+        </div>
+
+        <div class="devices-grid" id="devicesGrid">
+            <!-- Devices will be dynamically generated -->
+        </div>
+
+        <div class="stats-section">
+            <div class="stat-card">
+                <div class="stat-icon">💡</div>
+                <div class="stat-info">
+                    <div class="stat-value" id="activeDevices">0</div>
+                    <div class="stat-label">Active Devices</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⚡</div>
+                <div class="stat-info">
+                    <div class="stat-value" id="totalDevices">0</div>
+                    <div class="stat-label">Total Devices</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🌡️</div>
+                <div class="stat-info">
+                    <div class="stat-value" id="avgTemp">--</div>
+                    <div class="stat-label">Avg Temperature</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🔋</div>
+                <div class="stat-info">
+                    <div class="stat-value" id="energyUsed">0 kWh</div>
+                    <div class="stat-label">Energy Used</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="notifications" id="notifications"></div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
