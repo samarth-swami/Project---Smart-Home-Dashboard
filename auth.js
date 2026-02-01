@@ -180,8 +180,9 @@ function togglePassword(type = 'login') {
 // Logout function
 function logout() {
     setCurrentUser(null);
-    window.location.href = 'login.html';
+    window.location.replace('login.html');
 }
+
 
 // Check authentication on page load (for dashboard)
 function checkAuth() {
