@@ -5,7 +5,15 @@
       "dest": "/$1"
     },
     {
-      "src": "/.*",
+      "src": "^/$",
+      "dest": "/login.html"
+    },
+    {
+      "src": "/login",
+      "dest": "/login.html"
+    },
+    {
+      "src": "/(.*)",
       "dest": "/index.html"
     }
   ]
