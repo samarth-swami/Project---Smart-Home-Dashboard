@@ -1,137 +1,154 @@
-🏠 Smart Home Dashboard
+# 🏠 Smart Home Dashboard
 
-A Smart Home Dashboard built using pure HTML, CSS, and Vanilla JavaScript, featuring client-side authentication and simulated smart device controls.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-000?style=for-the-badge&logo=vercel)](https://project-smart-home-dashboard-hsqj.vercel.app/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/samarth-swami/Project---Smart-Home-Dashboard)
 
-The application follows a login-first approach, ensuring users must authenticate before accessing the dashboard.
+A **Smart Home Dashboard** built using **pure HTML, CSS, and Vanilla JavaScript**, featuring client-side authentication and simulated smart device controls.
 
-🔑 Application Flow
+The application follows a **login-first approach**, ensuring users must authenticate before accessing the dashboard.
 
-The application opens on the Login page
+---
 
-Users can register or log in
+# 🔑 Application Flow
 
-After successful login, users are redirected to the Dashboard
+1. The application opens on the **Login page**
+2. Users can **register or log in**
+3. After successful login, users are redirected to the **Dashboard**
+4. If a user is **not logged in**, dashboard access is **blocked**
+5. Logging out **clears the session** and redirects back to the login page
 
-If a user is not logged in, dashboard access is blocked
+Authentication and session handling are implemented using **browser localStorage**.
 
-Logging out clears the session and redirects back to the login page
+---
 
-Authentication and session handling are implemented using browser localStorage
+# 🌍 Live Demo
 
-📂 Project Structure
-├── index.html      → Smart Home Dashboard (protected)
-├── login.html      → Login & Registration page
-├── styles.css      → Global styling and layout
-├── script.js       → Dashboard logic & device simulation
-├── auth.js         → Authentication, login, logout & session handling
-├── vercel.json     → Routing configuration for Vercel
-└── README.md       → Project documentation
+🚀 Try the project here:
 
-⚙️ Features
-🔐 Authentication
+👉 https://project-smart-home-dashboard-hsqj.vercel.app/
 
-Client-side login and registration system
+---
 
-Session-based access control using localStorage
+# 📂 Project Structure
 
-Protected dashboard routes
+├── index.html → Smart Home Dashboard (Protected Page)
+├── login.html → Login & Registration Page
+├── styles.css → Global Styling and Layout
+├── script.js → Dashboard Logic & Device Simulation
+├── auth.js → Authentication, Login, Logout & Session Handling
+├── vercel.json → Routing Configuration for Vercel
+└── README.md → Project Documentation
 
-Logout functionality with session cleanup
+# ⚙️ Features
 
-🏡 Smart Device Simulation
+## 🔐 Authentication
 
-Lighting
+- Client-side **login and registration system**
+- **Session-based access control** using `localStorage`
+- **Protected dashboard routes**
+- **Logout functionality** with session cleanup
 
-Climate Control
+---
 
-Security
+## 🏡 Smart Device Simulation
 
-Entertainment
+The dashboard simulates different smart home systems:
 
-🎛️ Controls & Interactions
+- 💡 **Lighting**
+- 🌡️ **Climate Control**
+- 🔐 **Security**
+- 🎵 **Entertainment**
 
-Device ON/OFF toggles
+---
 
-Sliders for:
+## 🎛️ Controls & Interactions
 
-Brightness
+Users can interact with smart devices through:
 
-Temperature
+- **Device ON/OFF toggles**
+- Adjustable sliders for:
+  - Brightness
+  - Temperature
+  - Volume
+- **Category-based device filtering**
+- **Auto mode simulation**
+- **Real-time statistics display**
+- **Notification system**
+- **Keyboard shortcuts for faster device control**
 
-Volume
+---
 
-Category-based device filtering
+# 📱 User Interface
 
-Auto mode simulation
+- **Fully responsive design**
+- Clean and intuitive dashboard layout
+- Works smoothly across:
 
-Real-time statistics display
+  - Desktop
+  - Tablet
+  - Mobile devices
 
-Notification system
+---
 
-Keyboard shortcuts for quick device control
+# 🛠️ Tech Stack
 
-📱 UI/UX
+- **HTML5**
+- **CSS3**
+- **Vanilla JavaScript**
+- **Browser localStorage**
+- **Vercel (Static Deployment)**
 
-Fully responsive design
+### Project Constraints
 
-Clean and intuitive interface
+- ❌ No frameworks  
+- ❌ No libraries  
+- ❌ No build tools
 
-Works across desktop, tablet, and mobile screens
+---
 
-🛠️ Tech Stack
+# 🌍 Deployment
 
-HTML5
+The project is deployed as a **static website using Vercel**.
 
-CSS3
+Deployment configuration ensures:
 
-Vanilla JavaScript
+- The **Login page is the default entry point**
+- The **Dashboard remains protected** via authentication checks
+- Static assets (**CSS & JavaScript**) are served correctly
 
-Browser localStorage
+---
 
-Vercel (Static Deployment)
-
-🚫 No frameworks
-🚫 No libraries
-🚫 No build tools
-
-🌍 Deployment
-
-The project is deployed as a static site on Vercel with custom routing:
-
-Login page is the default entry point
-
-Dashboard is protected via authentication checks
-
-Static assets (CSS & JS) are served correctly
-
-▶️ Run Locally
+# ▶️ Run Locally
 
 Clone the repository:
 
+```bash
 git clone https://github.com/samarth-swami/Project---Smart-Home-Dashboard.git
 
+---
 
-Open login.html directly in your browser
-(No server required)
+Open the project folder and run:
 
-⚠️ Important Note
+login.html
 
-This project uses client-side authentication only and is intended for:
+---
 
-Learning purposes
+## ⚠️ Important Note
 
-College projects
+This project uses **client-side authentication only** and is intended for:
 
-Portfolio demonstrations
+- Learning purposes
+- College projects
+- Portfolio demonstrations
 
-❌ Not suitable for production-level security
+❌ **Not suitable for production-level security.**
 
-👥 Collaborators
+---
 
-Samarth Swami — Project Lead
+## 👥 Contributors
 
-Dhruv Takale
+- **Samarth Swami** — Project Lead  
+- **Dhruv Takale**  
+- **Vishal Wadh**  
+- **Bhavya Kumar**
 
-Vishal Wadh
-
-Bhavya Kumar
