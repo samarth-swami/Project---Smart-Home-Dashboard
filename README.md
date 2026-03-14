@@ -124,7 +124,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/samarth-swami/Project---Smart-Home-Dashboard.git
-
+```
 ---
 
 Open the project folder and run:
